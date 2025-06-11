@@ -13,3 +13,17 @@ body {
   animation: flowBackground 20s linear infinite;
 }
 
+#fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), black);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 1s ease, filter 1s ease;
+}
+
+#fade-overlay.active {
+  opacity: 1;
+  filter: blur(8px);
+}

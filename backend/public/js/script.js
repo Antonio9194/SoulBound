@@ -14,3 +14,19 @@ import { floatLetters } from './jsComponents/welcome.js';
 document.addEventListener("DOMContentLoaded", () => {
   floatLetters();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const link = document.querySelector('.start-link');
+  const overlay = document.getElementById('fade-overlay');
+
+  if (link && overlay) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent instant navigation
+      overlay.classList.add('active'); // Start fade
+
+      setTimeout(() => {
+        window.location.href = link.getAttribute('href');
+      }, 1000); // Wait for the fade to finish
+    });
+  }
+});
