@@ -15,18 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
   floatLetters();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const link = document.querySelector('.start-link');
-  const overlay = document.getElementById('fade-overlay');
+const link = document.querySelector('.start-link');
+const smoke = document.getElementById('smoke-overlay');
 
-  if (link && overlay) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault(); // Prevent instant navigation
-      overlay.classList.add('active'); // Start fade
-
-      setTimeout(() => {
-        window.location.href = link.getAttribute('href');
-      }, 1000); // Wait for the fade to finish
-    });
-  }
+link.addEventListener('click', e => {
+  e.preventDefault(); // prevent instant jump
+  smoke.classList.add('active'); // show smoke
+  setTimeout(() => {
+    window.location.href = link.href; // go to page after smoke
+  }, 1200); // wait for smoke to show
 });
