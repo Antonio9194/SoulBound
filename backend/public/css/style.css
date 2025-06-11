@@ -1,0 +1,14 @@
+@import url(./cssComponents/welcome.css);
+@import url(./cssComponents/items.css);
+
+body {
+  background: linear-gradient(
+    270deg, 
+    rgba(255, 255, 255, 0.92), 
+    rgba(151, 183, 215, 0.45), 
+    rgba(255, 255, 255, 0.92)
+  );
+  background-size: 600% 600%;
+  animation: flowBackground 20s linear infinite;
+}
+

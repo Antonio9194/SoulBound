@@ -1,0 +1,59 @@
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.magical-letter {
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: floatUp 1.5s ease-out forwards;
+  margin: 0 0.05em;
+}
+
+@keyframes smoothFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-4px) translateX(2px);
+  }
+  50% {
+    transform: translateY(-8px) translateX(0);
+  }
+  75% {
+    transform: translateY(-4px) translateX(-2px);
+  }
+}
+
+.floating-letter {
+  display: inline-block;
+  animation: smoothFloat 5s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.3s); /* we'll assign this in JS */
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  display: inline-block; /* needed for transform */
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

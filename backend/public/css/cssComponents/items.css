@@ -1,0 +1,83 @@
+.flying_items {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.item {
+  position: absolute;
+  width: 60px;
+  opacity: 0.7;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Gentle float animation */
+@keyframes gentleFloat1 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(30px, -40px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes gentleFloat2 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-25px, 35px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes gentleFloat3 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes gentleFloat4 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-30px, -25px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes gentleFloat5 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(15px, -30px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Assign different float animations */
+.item:nth-child(1) {
+  top: 30%; /* was 10%, lowered */
+  left: 15%;
+  animation-name: gentleFloat1;
+  animation-duration: 9s;
+}
+
+.item:nth-child(2) {
+  top: 35%;
+  left: 60%;
+  animation-name: gentleFloat2;
+  animation-duration: 10s;
+}
+
+.item:nth-child(3) {
+  top: 55%;
+  left: 25%;
+  animation-name: gentleFloat3;
+  animation-duration: 8s;
+}
+
+.item:nth-child(4) {
+  top: 70%;
+  left: 75%;
+  animation-name: gentleFloat4;
+  animation-duration: 11s;
+}
+
+.item:nth-child(5) {
+  top: 33%;
+  left: 36%;
+  animation-name: gentleFloat5;
+  animation-duration: 10s;
+}
