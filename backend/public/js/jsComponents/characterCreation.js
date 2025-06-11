@@ -4,7 +4,7 @@ export function creationchar() {
       text: "What essence forms your soul?",
       type: "select",
       name: "sex",
-      options: ["Male", "Female"]
+      options: ["Male", "Female", "Other"]
     },
     {
       text: "Choose your Path",
@@ -119,6 +119,7 @@ export function creationchar() {
         console.log("Answers:", answers);
       }
     });
+    
 
     container.appendChild(label);
     container.appendChild(document.createElement("br"));

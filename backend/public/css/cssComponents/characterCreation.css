@@ -1,0 +1,83 @@
+.character-creation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* keep h1 at the top */
+  min-height: 100vh; /* full viewport height */
+  padding-top: 40px; /* some breathing space from the top */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.character-creation h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.9rem;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+#question-container {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border: 2px solid rgba(151, 183, 215, 0.45);
+  min-height: 300px;
+  width: 400px;
+  padding: 50px;
+  background: #f8f0ff;
+  overflow-y: auto;
+}
+
+label {
+  font-size: 1.7rem;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 50px;
+  background: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+img {
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.final-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4b0082; /* Indigo magic */
+  font-family: 'Dancing Script', cursive;
+  padding-top: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
