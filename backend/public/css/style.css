@@ -1,5 +1,6 @@
 @import url(./cssComponents/welcome.css);
 @import url(./cssComponents/items.css);
+@import url(./cssComponents/crystalBall.css);
 
 body {
   background: linear-gradient(

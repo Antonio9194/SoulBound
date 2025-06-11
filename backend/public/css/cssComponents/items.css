@@ -46,6 +46,12 @@
   100% { transform: translate(0, 0); }
 }
 
+@keyframes gentleFloat5 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(15px, -30px); }
+  100% { transform: translate(0, 0); }
+}
+
 /* Assign different float animations */
 .item:nth-child(1) {
   top: 30%; /* was 10%, lowered */
@@ -76,6 +82,13 @@
 }
 
 .item:nth-child(5) {
+    top: 33%;
+  left: 80%; /* mirrored from 36% */
+  animation-name: gentleFloat4; /* different animation for variation */
+  animation-duration: 10s;
+}
+
+.item:nth-child(6) {
   top: 33%;
   left: 36%;
   animation-name: gentleFloat5;
