@@ -1,6 +1,6 @@
-// magicalText.js
+// Animate h1 with class "soul-bound" letter-by-letter
 export function floatLetters() {
-  const h1 = document.querySelector("h1");
+  const h1 = document.querySelector("h1.soul-bound");
   if (!h1) return;
 
   const text = h1.textContent;
@@ -15,6 +15,7 @@ export function floatLetters() {
   });
 }
 
+// Animate first h3 letter-by-letter on DOM load
 document.addEventListener("DOMContentLoaded", () => {
   const h3 = document.querySelector("h3");
   if (!h3) return;

@@ -13,24 +13,12 @@ function animateBackgroundPosition() {
 animateBackgroundPosition();
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (document.querySelector('.start-link')) {
-    // Welcome page
-    floatLetters();
+  // ✨ Apply floating magic to all h1s
+  floatLetters();
 
-    const link = document.querySelector('.start-link');
-    const smoke = document.getElementById('smoke-overlay');
-
-    link.addEventListener('click', e => {
-      e.preventDefault(); // prevent instant jump
-      smoke.classList.add('active'); // show smoke
-      setTimeout(() => {
-        window.location.href = link.href; // go to page after smoke
-      }, 1200); // wait for smoke to show
-    });
-  }
-
-  if (document.querySelector('h1')?.textContent.includes('Create Your Character')) {
-    // Character creation page
+  // ✨ Initialize character creation page logic only if needed
+  const h1 = document.querySelector('h1');
+  if (h1 && h1.textContent.includes('Create Your Character')) {
     creationchar();
   }
 });
