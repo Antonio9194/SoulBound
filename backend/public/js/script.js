@@ -1,3 +1,6 @@
+import { floatLetters } from './jsComponents/welcome.js';
+import { creationchar } from './jsComponents/characterCreation.js';
+
 const body = document.body;
 let pos = 0;
 
@@ -9,19 +12,25 @@ function animateBackgroundPosition() {
 
 animateBackgroundPosition();
 
-import { floatLetters } from './jsComponents/welcome.js';
-
 document.addEventListener("DOMContentLoaded", () => {
-  floatLetters();
-});
+  if (document.querySelector('.start-link')) {
+    // Welcome page
+    floatLetters();
 
-const link = document.querySelector('.start-link');
-const smoke = document.getElementById('smoke-overlay');
+    const link = document.querySelector('.start-link');
+    const smoke = document.getElementById('smoke-overlay');
 
-link.addEventListener('click', e => {
-  e.preventDefault(); // prevent instant jump
-  smoke.classList.add('active'); // show smoke
-  setTimeout(() => {
-    window.location.href = link.href; // go to page after smoke
-  }, 1200); // wait for smoke to show
+    link.addEventListener('click', e => {
+      e.preventDefault(); // prevent instant jump
+      smoke.classList.add('active'); // show smoke
+      setTimeout(() => {
+        window.location.href = link.href; // go to page after smoke
+      }, 1200); // wait for smoke to show
+    });
+  }
+
+  if (document.querySelector('h1')?.textContent.includes('Create Your Character')) {
+    // Character creation page
+    creationchar();
+  }
 });
