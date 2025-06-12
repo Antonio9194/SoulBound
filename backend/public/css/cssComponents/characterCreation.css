@@ -29,11 +29,13 @@
 }
 
 label {
-  font-size: 1.7rem;
-  font-family: 'Dancing Script', cursive;
-  color: black;
-  margin-bottom: 8px;
+  font-size: 1.2rem;            /* smaller but readable */
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;                  /* softer black, less harsh */
+  margin-bottom: 6px;
   display: block;
+  font-weight: 600;             /* a little bold for clarity */
+  letter-spacing: 0.02em;       /* subtle spacing for elegance */
 }
 
 input, select {
