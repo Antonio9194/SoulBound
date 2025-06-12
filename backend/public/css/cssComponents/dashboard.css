@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f4f8;
   margin: 0;
   padding: 20px;
@@ -176,4 +176,18 @@ background: linear-gradient(270deg,
 .character-info p {
   margin: 8px 0;
   font-weight: 500;
+}
+
+.daily-quests p,
+.side-quests p,
+.main-quest p,
+.character-overview p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b0082;
+  font-weight: 400;
+  margin: 10px 0;
+  letter-spacing: 0.03em;
+  word-wrap: break-word;
+  font-family: 'Nunito', sans-serif;
 }
