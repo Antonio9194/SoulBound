@@ -1,0 +1,39 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #c7b5e0, #e8d9ff);
+  color: #4c2a85;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+}
+
+.guild-name {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logout {
+  background-color: #f5e6ff;
+  color: #5f3390;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logout-button:hover .logout {
+  background-color: #e3d1fb;
+  color: #4c2a85;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+  transform: scale(1.05);
+}

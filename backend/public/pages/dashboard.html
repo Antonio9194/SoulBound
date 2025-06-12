@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="/images/book.png" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css" />
   <title>Dashboard - Soul Bound</title>
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="guild-name">🧝‍♀️ The Guild</div>
+    <button class="logout-button">
+      <a class="logout" href="../index.html">Leave Realm</a>
+    </button>
+  </nav>
 
   <div class="top-containers">
     <section class="daily-quests">
@@ -20,13 +27,27 @@
         <img src="../images/requests.png" alt="paper">
       </div>
       <ul class="quest-list">
-        <li class="quest-item">🌅 Morning: Review yesterday’s code notes</li>
-        <li class="quest-item">☕ Mid-morning: Complete a 30-min JavaScript tutorial</li>
-        <li class="quest-item">🍽️ Noon: Take a healthy break & meditate</li>
-        <li class="quest-item">🖥️ Afternoon: Build a small frontend component</li>
-        <li class="quest-item">🧠 Late afternoon: Read a blog on backend best practices</li>
-        <li class="quest-item">🌙 Evening: Practice algorithm problems for 20 minutes</li>
-        <li class="quest-item">📚 Night: Plan tomorrow’s coding goals</li>
+        <li class="quest-item">🌅 Morning: Review yesterday’s code notes
+          <button class="complete-btn">Complete</button>
+        </li>
+        <li class="quest-item">☕ Mid-morning: Complete a 30-min JavaScript tutorial
+          <button class="complete-btn">Complete</button>
+        </li>
+        <li class="quest-item">🍽️ Noon: Take a healthy break & meditate
+          <button class="complete-btn">Complete</button>
+        </li>
+        <li class="quest-item">🖥️ Afternoon: Build a small frontend component
+          <button class="complete-btn">Complete</button>
+        </li>
+        <li class="quest-item">🧠 Late afternoon: Read a blog on backend best practices
+          <button class="complete-btn">Complete</button>
+        </li>
+        <li class="quest-item">🌙 Evening: Practice algorithm problems for 20 minutes
+          <button class="complete-btn">Complete</button>
+        </li>
+        <li class="quest-item">📚 Night: Plan tomorrow’s coding goals
+          <button class="complete-btn">Complete</button>
+        </li>
       </ul>
     </section>
 
@@ -67,11 +88,22 @@
         <img class="main-quest-img" src="../images/requests.png" alt="paper" />
       </div>
       <p>
-        You embark on your epic journey to become a full-stack developer. Each day you delve deeper into the arcane arts
-        of front-end enchantments and back-end alchemy. Your quest is filled with riddles (bugs), allies (mentors), and
-        artifacts (frameworks) that will one day make you a master of the code realm. Stay brave, adventurer — your
-        legend is just beginning.
+        You begin your journey to become a full-stack developer. Each day, you explore the magic of front-end design and
+        back-end coding. Challenges, allies, and powerful tools await you. Stay brave — your legend is just starting.
       </p>
+
+      <!-- Added Main Quest Objective -->
+      <h3>Next Step</h3>
+      <p>Craft a magical mockup of your wellness app to share at the grand pitch.</p>
+      <h3>Timeline</h3>
+      <ul>
+        <li>Step 1: Upload your enchanted presentation to the kit by Friday</li>
+        <li>Step 2: Deliver your magical pitch on Saturday</li>
+        <li>Step 3: Once you have slayed the dragon, turn in your quest in at the guild</li>
+      </ul>
+
+      <!-- Added Complete Button -->
+      <button class="complete-btn" type="button">Complete</button>
     </section>
 
     <section class="character-overview">
@@ -84,6 +116,9 @@
         <p><strong>Class:</strong> Mage</p>
         <p><strong>Level:</strong> 7</p>
         <p><strong>Quests to Level Up:</strong> 3</p>
+        <p><strong>Special Ability:</strong> Arcane Blast</p>
+        <p><strong>Equipment:</strong> Enchanted Staff, Mystic Robe</p>
+        <p><strong>Achievements:</strong> Defeated the Shadow Wraith</p>
       </div>
     </section>
   </div>

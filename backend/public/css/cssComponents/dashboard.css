@@ -64,7 +64,7 @@ body {
 }
 
 .daily-quests-header,
-.side-quests-header {
+.side-quests-header, .main-quest-header, .character-header {
   position: sticky;
   top: 0;
   background: linear-gradient(270deg,
@@ -111,20 +111,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.side-quests button {
-  background-color: #8a2be2;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 6px 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.side-quests button:hover {
-  background-color: #6a1cb1;
 }
 
 .main-quest {
@@ -190,4 +176,49 @@ background: linear-gradient(270deg,
   letter-spacing: 0.03em;
   word-wrap: break-word;
   font-family: 'Nunito', sans-serif;
+}
+
+
+.complete-btn, .side-quests button {
+  margin-left: 12px;
+  background-color: #a0e7e5; /* soft magical aqua */
+  color: #1b1b3a; /* deep indigo for contrast */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 6px rgba(160, 231, 229, 0.6);
+}
+
+.complete-btn:hover, .side-quests button:hover  {
+  background-color: #7edbd7; /* deeper glow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(160, 231, 229, 0.8);
+}
+
+.main-quest h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #6a1cb1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c3a3ff;
+  padding-bottom: 5px;
+}
+
+.main-quest ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.main-quest ul li {
+  color: #4b0082;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
 }

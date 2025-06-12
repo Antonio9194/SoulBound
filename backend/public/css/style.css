@@ -3,6 +3,7 @@
 @import url(./cssComponents/crystalBall.css);
 @import url(./cssComponents/characterCreation.css);
 @import url(./cssComponents/dashboard.css);
+@import url(./cssComponents/navbar.css);
 
 body {
   background: linear-gradient(
