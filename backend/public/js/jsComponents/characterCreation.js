@@ -115,11 +115,14 @@ export function creationchar() {
       if (current < questions.length) {
         renderQuestion();
       } else {
-        container.innerHTML = "<p>Your soul is ready to begin the journey... 🌟</p>";
+        container.innerHTML = '<p class="final-message">Your soul is ready to begin the journey... ✨</p>';
         console.log("Answers:", answers);
+        setTimeout(() => {
+        window.location.href = "../../pages/dashboard.html";  // change this to your target page URL
+        }, 2500);
       }
     });
-    
+
 
     container.appendChild(label);
     container.appendChild(document.createElement("br"));
