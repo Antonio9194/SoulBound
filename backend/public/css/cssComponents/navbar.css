@@ -12,6 +12,19 @@
   font-size: 1.5rem;
 }
 
+.tavern-button,
+.logout-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px; /* space between Tavern and Leave Realm */
+}
+
 .guild-name {
   font-weight: bold;
   letter-spacing: 1px;
@@ -32,6 +45,13 @@
 }
 
 .logout-button:hover .logout {
+  background-color: #e3d1fb;
+  color: #4c2a85;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+  transform: scale(1.05);
+}
+
+.tavern-button:hover .logout {
   background-color: #e3d1fb;
   color: #4c2a85;
   box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);

@@ -1,5 +1,15 @@
 .character-header {
-  position: relative; /* make parent relative for absolute positioning */
+  .character-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(270deg,
+      rgba(255, 255, 255, 0.97),
+      rgba(200, 220, 245, 0.3),
+      rgba(255, 255, 255, 0.97));
+  padding-top: 0;
+  padding-bottom: 15px;
+}
 }
 
 .like-badge {
