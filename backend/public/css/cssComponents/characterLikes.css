@@ -1,0 +1,59 @@
+.character-header {
+  position: relative; /* make parent relative for absolute positioning */
+}
+
+.like-badge {
+  position: absolute;
+  top: 100%;        /* right below the bottom of the parent */
+  left: 50%;        /* horizontally center relative to parent */
+  transform: translateX(570%); /* shift right to exactly below center */
+  margin-top: 6px;  /* small spacing */
+  background: #a0e7e5; /* matching your complete buttons */
+  color: #1b1b3a;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+  white-space: nowrap;
+  box-shadow: 0 0 8px rgba(160, 231, 229, 0.6);
+  z-index: 10;
+}
+.like-badge:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 50%;                /* vertically center relative to badge */
+  right: 110%;             /* place it left of the badge */
+  transform: translateY(-50%);
+  background: rgba(127, 90, 240, 0.9);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 0 8px rgba(127, 90, 240, 0.7);
+  opacity: 1;
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 0.3s ease;
+}
+
+.like-badge:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;            /* right edge of badge */
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent rgba(127, 90, 240, 0.9) transparent transparent;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 100;
+}

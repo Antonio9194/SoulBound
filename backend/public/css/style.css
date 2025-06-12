@@ -4,6 +4,7 @@
 @import url(./cssComponents/characterCreation.css);
 @import url(./cssComponents/dashboard.css);
 @import url(./cssComponents/navbar.css);
+@import url(./cssComponents/characterLikes.css);
 
 body {
   background: linear-gradient(

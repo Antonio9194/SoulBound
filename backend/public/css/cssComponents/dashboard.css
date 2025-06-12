@@ -87,8 +87,8 @@ body {
 }
 
 .avatar {
-  width: 85px;
-  height: 85px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: contain;
   margin-left: 15px;
@@ -222,3 +222,4 @@ background: linear-gradient(270deg,
   font-family: 'Nunito', sans-serif;
   line-height: 1.6;
 }
+
