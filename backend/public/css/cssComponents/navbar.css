@@ -13,7 +13,7 @@
 }
 
 .tavern-button,
-.logout-button {
+.logout-button, .map-button, .character-button, .blacksmith-button {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -58,3 +58,23 @@
   transform: scale(1.05);
 }
 
+.map-button:hover .logout {
+  background-color: #e3d1fb;
+  color: #4c2a85;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+  transform: scale(1.05);
+}
+
+.character-button:hover .logout {
+  background-color: #e3d1fb;
+  color: #4c2a85;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+  transform: scale(1.05);
+}
+
+.blacksmith-button:hover .logout {
+  background-color: #e3d1fb;
+  color: #4c2a85;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+  transform: scale(1.05);
+}
